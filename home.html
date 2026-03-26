@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unit I – Introduction & Concept | Event Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --dark: #020617;
+            --primary: #38bdf8;
+            --text: #e5e7eb;
+            --muted: #cbd5f5;
+            --card: #f1f5f9;
+            --ink: #020617;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe UI, Arial
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75
+        }
+
+        header {
+    background: rgba(2, 6, 23, .95);
+    padding: 12px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: var(--primary);
+    font-size: 24px;
+    margin-left: -72px;
+}
+
+/* NAVBAR FIX */
+nav {
+    display: flex;
+    /* gap: 18px; spacing between links */
+    flex-wrap: wrap; /* responsive */
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--primary);
+    color: #020617;
+}
+        .hero {
+            background: linear-gradient(135deg, #020617, #0f172a);
+            padding: 90px 8% 70px;
+            text-align: center
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 12px
+        }
+
+        .hero p {
+            max-width: 900px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 18px
+        }
+
+        .section {
+            background: #fff;
+            color: var(--ink);
+            padding: 80px 8%
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 34px
+        }
+
+        .section p {
+            max-width: 980px;
+            margin: 0 auto 16px;
+            color: #334155;
+            font-size: 17px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 24px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 26px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(2, 6, 23, .12);
+            border: 1px solid rgba(2, 6, 23, .06)
+        }
+
+        .card h3 {
+            margin-bottom: 10px
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #075985;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            margin-bottom: 10px
+        }
+
+        .objectives {
+            background: linear-gradient(180deg, #ffffff, #f8fafc);
+            padding: 70px 8%
+        }
+
+        .objectives ul {
+            max-width: 900px;
+            margin: 10px auto 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 14px;
+            color: black;
+        }
+
+        .objectives li {
+            background: #fff;
+            padding: 16px 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(2, 6, 23, .08);
+            box-shadow: 0 8px 20px rgba(2, 6, 23, .08);
+            color: black;
+        }
+
+        .dark {
+            background: #020617;
+            color: var(--text);
+            padding: 70px 8%;
+            text-align: center
+        }
+
+        .dark p {
+            max-width: 980px;
+            margin: auto;
+            color: var(--muted)
+        }
+
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 26px
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+      
+        <nav id="nav">
+            <!-- <a href="index.html">Home</a> -->
+            <a href="blog.html">Blog</a>
+            <a href="AM.html">Affiliate Marketing </a>
+            <a href="Mobile strategy.html">Mobile Strategy</a>
+            <a href="Search Engine Marketing.html">Search Engine Marketing</a>
+            <a href="email.html">Email Marketing</a>
+            <a href="Social Media Marketing.html">Social Media </a>
+            <a href="Digital Marketing Strategy .html">Digital Marketing  </a>
+            <a href="video.html">Video Marketing  </a>
+            <a href="signup.html">SignUp</a>
+            <a href="login.html">Login</a>
+            
+            <!-- <a href="services.html">Services</a>
+            <a href="unit1-introduction.html">Unit I</a> -->
+        </nav>
+    </header>
+
+    <section class="hero">
+      <h1>EventBoost</h1>
+        <h2> Introduction & Concept (Event Management)</h2>
+        <p>
+            This page explains the basic concepts of marketing and how digital marketing supports
+            the Event Management business to reach clients, promote events, and generate inquiries.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>What is Marketing?</h2>
+        <p>
+            Marketing is the process of identifying customer needs, creating value-driven services,
+            promoting offerings, and building strong relationships with customers. In Event Management,
+            marketing helps event planners promote their services, communicate event concepts, attract
+            clients, and convert inquiries into successful events such as weddings, corporate conferences,
+            exhibitions, and product launches.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Traditional Marketing vs Digital Marketing (for Event Management)</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Traditional Marketing</span>
+                <h3>Offline Promotion</h3>
+                <p>
+                    Traditional marketing includes newspaper ads, banners, hoardings, flyers, radio promotions,
+                    and word-of-mouth referrals. Event managers use these methods to promote weddings, local
+                    events, exhibitions, and community programs. These methods have limited reach and are
+                    difficult to measure.
+                </p>
+            </div>
+            <div class="card">
+                <span class="badge">Digital Marketing</span>
+                <h3>Online Promotion</h3>
+                <p>
+                    Digital marketing includes websites, social media, email invitations, event videos, online
+                    registrations, and search engine visibility. Event management companies use digital channels
+                    to reach a wider audience, showcase event portfolios, collect inquiries, and promote events
+                    more efficiently with measurable results.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Why Digital Marketing is Important for Event Management Today</h2>
+        <p>
+            Today, people search online to find event planners, venues, and services. Digital marketing
+            helps event management companies showcase their work, reach the right audience, promote events,
+            generate inquiries, and build trust through online presence. It is cost-effective, measurable,
+            and allows event planners to communicate directly with clients through websites, social media,
+            and email invitations.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Digital Marketing Trends 2026 (Used in Event Promotion)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Short-Form Event Videos</h3>
+                <p>Reels and short clips to showcase event highlights, stage setups, and guest experiences.</p>
+            </div>
+            <div class="card">
+                <h3>Influencer Event Collaborations</h3>
+                <p>Collaborating with local influencers to promote product launches and grand openings.</p>
+            </div>
+            <div class="card">
+                <h3>AI-Based Event Promotion</h3>
+                <p>Using AI tools for targeted ads, personalized invitations, and smart event recommendations.</p>
+            </div>
+            <div class="card">
+                <h3>Virtual & Hybrid Event Promotion</h3>
+                <p>Promoting online and hybrid events with live streaming and digital invitations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Target Audience of Our Event Management Website</h2>
+        <p>
+            The target audience of this website includes corporate companies, startups, wedding clients,
+            brands launching new products, exhibition organizers, colleges, and individuals planning
+            social or professional events. The website is designed to attract people who are searching
+            for professional event planning and management services.
+        </p>
+    </section>
+
+    <section class="objectives">
+        <h2 style="text-align:center;color: black;">Objective of Our Event Management Website</h2>
+        <ul>
+            <li>✔ To generate client inquiries and business leads for event management services</li>
+            <li>✔ To build a strong brand image for professional event planning</li>
+            <li>✔ To showcase past events, services, and expertise</li>
+            <li>✔ To increase awareness of event management solutions</li>
+            <li>✔ To support online communication and event invitations</li>
+        </ul>
+    </section>
+
+    <section class="dark">
+        <p>
+            This Unit I page demonstrates how marketing concepts support the Event Management business.
+            The main focus of the website remains Event Management, while marketing tools are used only
+            to promote events and connect with clients effectively.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 EventBoost – Unit I (Introduction & Concept)
+    </footer>
+<script src='https://cdn.jotfor.ms/agent/embedjs/019d2a1e4d3d7e6a9155097ab57d1d77aefd/embed.js'>
+</script>
+</body>
+
+</html>

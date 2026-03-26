@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Affiliate Marketing in Event Management</title>
+
+<style>
+    :root{
+     --muted: #cbd5f5;
+     --primary: #38bdf8;
+}
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#1e293b;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* SECTION */
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+.section h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.section p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:30px;
+    color:#475569;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#2563eb;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* PROCESS */
+.process{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.step span{
+    background:#2563eb;
+    color:white;
+    padding:10px 15px;
+    border-radius:50%;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+/* CTA */
+.cta{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    margin-bottom:10px;
+}
+
+.cta button{
+    margin-top:15px;
+    padding:12px 30px;
+    border:none;
+    background:#0f172a;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.cta button:hover{
+    background:black;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .hero h2{
+        font-size:26px;
+    }
+}
+nav {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+}
+
+nav a {
+        color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 9px;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-top: -49px;
+}
+
+nav a:hover {
+    background: var(--primary);
+    color: #020617;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Affiliate Marketing for Event Management</h1>
+      <nav id="nav">
+            <a href="home.html">Home</a>
+            <!-- <a href="blog.html">Blog</a> -->
+            <!-- <a href="AM.html">Affiliate Marketing </a>
+            <a href="Mobile strategy.html">Mobile Strategy</a>
+            <a href="Search Engine Marketing.html">Search Engine Marketing</a>
+            <a href="email.html">Email Marketing</a>
+            <a href="Social Media Marketing.html">Social Media </a>
+            <a href="Digital Marketing Strategy .html">Digital Marketing  </a> -->
+
+            <!-- <a href="services.html">Services</a>
+            <a href="unit1-introduction.html">Unit I</a> -->
+        </nav>
+</header>
+
+<section class="hero">
+    <h2>Grow Your Events with Affiliate Marketing</h2>
+    <p>Boost ticket sales and reach new audiences through partnerships</p>
+</section>
+
+<section class="section">
+
+    <h2>What is Affiliate Marketing?</h2>
+
+    <p>
+        Affiliate Marketing is a type of online marketing where a person or partner (called an affiliate) promotes a product, service, or event and earns a commission for each sale, registration, or action they generate.
+    </p>
+
+    <p>
+        In event management, affiliate marketing helps expand reach, attract the right audience, and increase revenue without spending heavily on advertising.
+    </p>
+
+    <h2>Benefits of Affiliate Marketing</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Cost-Effective</h3>
+            <p>Pay only when you get results like ticket sales or registrations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wider Reach</h3>
+            <p>Reach new audiences through affiliate partners and influencers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Higher Conversions</h3>
+            <p>Affiliates promote to targeted audiences, increasing conversions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Brand Awareness</h3>
+            <p>Improve visibility and credibility of your events.</p>
+        </div>
+
+    </div>
+
+    <h2>How Affiliate Marketing Works</h2>
+
+    <div class="process">
+
+        <div class="step">
+            <span>01</span>
+            <h3>Join Program</h3>
+            <p>Create an affiliate program for your event.</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>Share Links</h3>
+            <p>Provide affiliates with unique tracking links.</p>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>Promote Event</h3>
+            <p>Affiliates promote your event on blogs, social media, and websites.</p>
+        </div>
+
+        <div class="step">
+            <span>04</span>
+            <h3>Earn Commission</h3>
+            <p>Affiliates earn money for every successful registration.</p>
+        </div>
+
+    </div>
+
+    <h2>Best Strategies for Event Affiliate Marketing</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Influencer Partnerships</h3>
+            <p>Collaborate with influencers to promote events effectively.</p>
+        </div>
+
+        <div class="card">
+            <h3>Promo Codes</h3>
+            <p>Offer discount codes to track affiliate performance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Landing Pages</h3>
+            <p>Create dedicated pages for affiliate campaigns.</p>
+        </div>
+
+        <div class="card">
+            <h3>Email Promotion</h3>
+            <p>Allow affiliates to promote events via email marketing.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+    <h2>Start Affiliate Marketing Today</h2>
+    <p>Partner with affiliates and grow your event audience faster</p>
+    <button>Get Started</button>
+</section>
+
+<footer>
+    © 2026 EventPro | Affiliate Marketing Page
+</footer>
+
+</body>
+</html>
